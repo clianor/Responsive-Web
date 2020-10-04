@@ -3,9 +3,14 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 /* #header { background: url(../img/header_bg.jpg) repeat-x center top; } */
 #nav { background-color: #f6fdff; }
 #title { background-color: #eaf7fd; }
+#contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+#cont_left { float: left; width: 250px; }
+#cont_center { overflow: hidden; min-height: 1300px; margin-right: 250px; border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+#cont_right { position: absolute; top: 0; right: 0; width: 250px; }
+#footer { border-top: 1px solid #dbdbdb; }
 
 /* 컨테이너 */
-.container { width: 1200px; margin: 0 auto; }
+.container { position: relative; width: 1200px; margin: 0 auto; }
 
 /* 헤더 */
 .header { height: 327px; }
@@ -47,11 +52,19 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 .title .btn { position: absolute; right: 0; top: 5px; width: 60px; height: 60px; line-height: 60px; background-color: #3192bf; color: #fff; font-size: 35px; border-radius: 50%; transition: all .3s ease; }
 .title .btn:hover { box-shadow: 0 0 0 3px rgba(71,154,191,0.9) inset, 0 0 0 100px rgba(0,0,0,0.1) inset; }
 
+/* 컨텐츠 영역 */
+.column { padding: 15px; border-bottom: 1px solid #dbdbdb; }
+.column.col3 { border-bottom: 0; }
+.column.col6 { border-bottom: 0; }
+.column.col9 { border-bottom: 0; }
+
 /* media query */
 @media (max-width: 1220px) {
     .container { width: 100%; }
     .row { padding: 0 15px; }
     .title .btn { right: 5px; }
+
+    #contents .container { border: 0; }
 }
 
 @media (max-width: 1024) {
@@ -64,10 +77,14 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     .nav > div li { width: 33.3333%; }
     .nav > div li:last-child { width: 33.3333%; }
     .nav > div ol { margin-bottom: 10px; }
+
+    #cont_right { position: static; width: 100%; border-top: 1px solid #dbdbdb; }
+    #cont_center { margin-right: 0; border-right: 0; }
 }
 
 @media (max-width: 768px) {
-
+    #cont_left { float: none; width: 100%; }
+    #cont_center { border-left: 0; }
 }
 
 @media (max-width: 600px) {
@@ -78,6 +95,10 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
     .nav > div li { width: 50%; }
     .nav > div li:last-child { width: 50%; }
+}
+
+@media (max-width: 480px){
+    
 }
 
 @media (max-width: 360px) {
