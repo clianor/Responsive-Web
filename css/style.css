@@ -1,5 +1,6 @@
 /* 레이아웃 */
-#header { background: url(../img/header_bg.jpg) repeat-x center top; }
+body {background: url(../img/header_bg.jpg) repeat-x center top;}
+/* #header { background: url(../img/header_bg.jpg) repeat-x center top; } */
 #nav { background-color: #f6fdff; }
 #title { background-color: #eaf7fd; }
 
@@ -50,4 +51,36 @@
 @media (max-width: 1220px) {
     .container { width: 100%; }
     .row { padding: 0 15px; }
+    .title .btn { right: 5px; }
+}
+
+@media (max-width: 1024) {
+
+}
+
+@media (max-width: 960px) {
+    .nav > div { float: none; width: 100%; }
+    .nav > div:last-child { float: none; width: 100%; }
+    .nav > div li { width: 33.3333%; }
+    .nav > div li:last-child { width: 33.3333%; }
+    .nav > div ol { margin-bottom: 10px; }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+    .header { height: auto; }
+    .header .header_tit { display: none; }
+    .header .header_icon { display: none; }
+    .title .btn { display: none; }
+
+    .nav > div li { width: 50%; }
+    .nav > div li:last-child { width: 50%; }
+}
+
+@media (max-width: 360px) {
+    .nav > div li { width: 100%; }
+    .nav > div li:last-child { width: 100%; }
 }
