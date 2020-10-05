@@ -1,7 +1,7 @@
 /* 레이아웃 */
 body {background: url(../img/header_bg.jpg) repeat-x center top;}
 /* #header { background: url(../img/header_bg.jpg) repeat-x center top; } */
-#nav { background-color: #f6fdff; }
+#nav { display: none; background-color: #f6fdff; }
 #title { background-color: #eaf7fd; }
 #contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
 #cont_left { float: left; width: 250px; }
@@ -104,6 +104,18 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
     .nav > div li { width: 50%; }
     .nav > div li:last-child { width: 50%; }
+
+    .column.col1 .col_tit { display: none; }
+    .column.col1 .col_desc { display: none; }
+    .column.col1 { padding: 0; border-bottom: 0; }
+    .column.col1 .menu { overflow: hidden; }
+    .column.col1 .menu li { float: left; width: 33.3333%; border-right: 1px solid #dbdbdb; text-align: center; box-sizing: border-box; }
+    .column.col1 .menu li:nth-child(3n) { border-right: 0; }
+    .column.col1 .menu li a { color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.7); }
+    .column.col1 .menu li a:hover { box-shadow: none; background-color: rgba(36,130,174,0.3); }
+    .column.col1 .menu li a i { display: none; }
+    .column.col2 { background-color: #fff; }
+    .column.col4 { border-top: 1px solid #dbdbdb; }
 }
 
 @media (max-width: 480px){
