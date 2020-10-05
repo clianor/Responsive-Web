@@ -4,13 +4,12 @@
     dots: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: {
-          arrows: true,
-          dots: false,
+          autoplay: false,
         },
       },
     ],
