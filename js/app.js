@@ -1,4 +1,7 @@
 (function () {
+  // 라이트 박스
+  $(".lightbox").lightGallery();
+
   // 이미지 슬라이더
   $(".slider").slick({
     dots: true,
