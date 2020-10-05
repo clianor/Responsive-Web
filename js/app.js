@@ -1,4 +1,22 @@
 (function () {
+  // 이미지 슬라이더
+  $(".slider").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          dots: false,
+        },
+      },
+    ],
+  });
+
+  // sns 공유하기
   $(".facebook").click(function (e) {
     e.preventDefault();
     window.open(
