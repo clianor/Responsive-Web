@@ -1,4 +1,32 @@
 (function () {
+  // 버튼 화살표 방향 버튼
+  function chgArrowBtn() {
+    if ($(".btn").hasClass("open")) {
+      $(".btn").find("i").attr("class", "fa fa-angle-up");
+    } else {
+      $(".btn").find("i").attr("class", "fa fa-angle-down");
+    }
+  }
+
+  // 접기 or 펼치기
+  $(".btn").click(function (e) {
+    e.preventDefault();
+    $(".nav").slideToggle();
+    $(".btn").toggleClass("open");
+
+    chgArrowBtn();
+  });
+
+  $(window).resize(function () {
+    var wWidth = $(window).width();
+    if (wWidth > 600) {
+      $(".nav").removeAttr("style");
+      $(".btn").removeClass("open");
+
+      chgArrowBtn();
+    }
+  });
+
   // 라이트 박스
   $(".lightbox").lightGallery();
 

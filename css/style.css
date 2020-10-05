@@ -1,7 +1,7 @@
 /* 레이아웃 */
 body {background: url(../img/header_bg.jpg) repeat-x center top;}
 /* #header { background: url(../img/header_bg.jpg) repeat-x center top; } */
-#nav { display: none; background-color: #f6fdff; }
+#nav { background-color: #f6fdff; }
 #title { background-color: #eaf7fd; }
 #contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
 #cont_left { float: left; width: 250px; }
@@ -34,7 +34,7 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 
 
 /* 전체 메뉴 */
-.nav { overflow: hidden; padding: 25px 0; }
+.nav { overflow: hidden; padding: 25px 0; display: none; }
 .nav > div { float: left; width: 40%; }
 .nav > div:last-child { width: 20%; }
 .nav > div ol { overflow: hidden; }
